@@ -35,7 +35,7 @@ a{
 :root{
     --green: rgba(176,181,107,0.7);
     --skin: rgba(255,230,153,0.7);
-    --purple: rgba(228,136,171,0.7);
+    --purple: rgba(228,136,171,1);
     --grey: rgba(175,171,171,0.7);
 }
 /* body */
@@ -57,6 +57,7 @@ body{
     align-items: center;
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: width 0.2s ease-in-out;
 }
 .nav__logo{
     margin-top: 20px;
@@ -111,17 +112,16 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.6em;
-    background-color: white;
+    font-size: 1.1em;
+    background-color: var(--purple);
     position: sticky;
     top: 0;
     z-index: 5;
-}
-.main__nav h2{
-    font-family: 'Niconne', cursive;
-    width: 90%;
-    text-align: center;
 
+}
+.main__nav h1{
+    color: white;
+    letter-spacing: 6px;
 }
 .main__nav button{
     background-color: transparent;
@@ -129,7 +129,8 @@ main{
     position: fixed;
     top: 30px;
     right: 30px;
-    font-size: 1.2em;
+    font-size: 1.7em;
+    color: white;
 }
 .main__container{
     width: 100%;
@@ -237,6 +238,60 @@ form button{
     width: 20%;
     border: none;
 }
+.delavnice__btns{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    margin: 10px 0;
+}
+.btn{
+    margin: 0.4vw;
+    font-size: 0.9em;
+    background-color: transparent;
+    border: 3px var(--purple) solid;
+    transition: background-color 0.3s ease-in-out;
+}
+.btn:hover{
+    background-color: var(--purple);
+}
+.delavnica__content{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    display: none;
+}
+.delavnica__galerija{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+.delavnica__content p{
+    margin-bottom: 20px;
+}
+.delavnica__content button{
+    background-color: var(--skin);
+    border: 2px black solid;
+}
+.prijava{
+    opacity: 0;
+    transition: opacity 1.4s ease-in;
+}
+.prijava input{
+    border: none;
+    border-bottom: 2px black solid;
+}
+.prijava button{
+    color: black;
+}
 /* main */
 
 /* izdelki */
@@ -253,12 +308,13 @@ form button{
 
 .row {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     padding: 10px 4px;
 }
 .column {
-    flex: 40%;
-    max-width: 40%;
+    flex: 80%;
+    max-width: 80%;
     padding: 0 4px;
 }
 .column img {
@@ -301,6 +357,9 @@ form button{
    }
    form{
        width: 50%;
+   }
+   .btn{
+       font-size: 1em;
    }
     /* main */
 
@@ -348,6 +407,9 @@ form button{
     #h2{
         display: block;
         margin-bottom: 20px;
+    }
+    .btn{
+        font-size: 1.1em;
     }
     /* main */
 }

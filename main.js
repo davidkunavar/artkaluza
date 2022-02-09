@@ -23,11 +23,58 @@ const bars = document.querySelector(".bars");
 const main = document.querySelector("main");
 const odziv = document.querySelector(".odziv");
 
+const btnPrijava = document.querySelectorAll(".btn__prijava");
+const formPrijava = document.querySelectorAll(".prijava");
+
+const delavniceBtn = document.querySelectorAll(".btn");
+const delavnicaVsebina = document.querySelectorAll(".delavnica__content")
+
+window.addEventListener("DOMContentLoaded", function () {
+    delavnicaVsebina.forEach(function (vsebina) {
+        if(vsebina.classList.contains("velikonocna")){
+            vsebina.style.display = "block";
+        }
+        else {
+            vsebina.style.display = "none";
+        }
+    })
+})
+
+delavniceBtn.forEach(function (btn) {
+    btn.addEventListener("click", function (e) {
+        delavnicaVsebina.forEach(function (delavnica) {
+
+            if(delavnica.classList.contains(e.currentTarget.dataset.id)){
+                delavnica.style.display = "block";
+
+                formPrijava.forEach(function (form) {
+                    form.style.opacity = "0"
+                })
+            }
+            else {
+                delavnica.style.display = "none";
+            }
+        })
+
+    })
+})
+
 bars.addEventListener("click", function () {
     nav.classList.toggle("show");
     main.style.height = 0;
     main.style.overflow = "hidden";
 })
+
+btnPrijava.forEach(function (button) {
+    button.addEventListener("click", function () {
+        formPrijava.forEach(function (form) {
+            form.style.opacity = "1"
+            button.style.display = "none"
+        })
+    })
+})
+
+
 let stevec = 1;
 window.setInterval(function () {
     let ime = mnenja[stevec].ime;
