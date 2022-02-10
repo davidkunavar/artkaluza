@@ -34,7 +34,7 @@ a{
 
 :root{
     --green: rgba(176,181,107,0.7);
-    --skin: rgba(255,230,153,0.7);
+    --skin: rgba(255,230,153,1);
     --purple: rgba(228,136,171,1);
     --grey: rgba(175,171,171,0.7);
 }
@@ -105,6 +105,9 @@ main{
     line-height: 1.8em;
     height: fit-content;
     min-height: 100vh;
+    background-image: url("media/ozadje.jpg");
+    background-size: cover;
+    background-position: center right;
 }
 .main__nav{
     height: 10vh;
@@ -122,6 +125,7 @@ main{
 .main__nav h1{
     color: white;
     letter-spacing: 6px;
+    font-weight: 500;
 }
 .main__nav button{
     background-color: transparent;
@@ -141,6 +145,7 @@ main{
 main h2{
     color: var(--purple);
     margin: 10px 0;
+    font-weight: 400;
 }
 #h2{
     display: none;
@@ -148,7 +153,7 @@ main h2{
 .main__container img{
     width: 450px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    margin: 20px auto;
+    margin: 10px auto;
 }
 .image__container{
     display: flex;
@@ -178,6 +183,8 @@ main h2{
     padding-bottom: 20px;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+
 }
 .vabilo p{
     margin-top: 10px;
@@ -199,9 +206,17 @@ main h2{
     height: 320px;
     max-height: 500px;
     overflow: scroll;
+    background-color: white;
+}
+.odziv h3{
+    font-weight: 500;
 }
 .odziv::-webkit-scrollbar{
     display: none;
+}
+#kontakt{
+    width: 70%;
+    margin: 0 auto;
 }
 .form{
     background-color: var(--skin);
@@ -212,7 +227,9 @@ main h2{
     padding: 30px;
 }
 .form h3{
-    width: 50%;
+    width: 70%;
+    font-weight: 400;
+    text-align: center;
 }
 form{
     width: 70%;
@@ -222,20 +239,21 @@ form{
     padding: 15px 0;
 }
 input{
-    border: 3px black solid;
+    border: 2px black solid;
     margin-top: 5px;
     margin-bottom: 10px;
     background-color: transparent;
 }
 textarea{
-    border: 3px black solid;
+    border: 2px black solid;
     margin: 15px 0;
     background-color: transparent;
 }
 form button{
     background-color: black;
     color: white;
-    width: 20%;
+    width: fit-content;
+    padding: 10px 10px;
     border: none;
 }
 .delavnice__btns{
@@ -284,6 +302,10 @@ form button{
 .prijava{
     opacity: 0;
     transition: opacity 1.4s ease-in;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 .prijava input{
     border: none;
@@ -291,12 +313,24 @@ form button{
 }
 .prijava button{
     color: black;
+    padding: 3px 8px;
+    width: 20%;
 }
 /* main */
 
 /* izdelki */
+#izdelki{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 #izdelki h2{
     margin-top: 10px;
+}
+#izdelki p{
+    width: 70%;
+    text-align: center;
 }
 #izdelki img{
     box-shadow: none;
@@ -334,7 +368,9 @@ form button{
     /* nav */
 
     /* main */
-
+    main{
+        background-position: center center;
+    }
    .main__container{
        width: 90%;
    }
@@ -354,13 +390,24 @@ form button{
    }
    .form{
        flex-direction: row;
+       align-content: space-around;
    }
    form{
        width: 50%;
+       margin-right: 100px;
+   }
+   form h3{
+       width: 40%;
+       margin-left: 100px;
+       text-align: right;
    }
    .btn{
        font-size: 1em;
    }
+   .prijava{
+       width: 50%;
+   }
+
     /* main */
 
     /* izdelki */
