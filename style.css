@@ -155,19 +155,20 @@ main h2{
 .main__container img{
     width: 450px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    margin: 10px auto;
+    margin: 15px auto;
 }
 .image__container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-top: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 .image__container ul{
     list-style-type: circle;
     padding: 10px;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 .image__container li{
     margin: 15px 0;
@@ -181,7 +182,7 @@ main h2{
     margin: 20px 20px;
     text-align: center;
     height: fit-content;
-    padding: 5px 20px;
+    padding: 5px 30px;
     padding-bottom: 20px;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -197,13 +198,12 @@ main h2{
     background-color: var(--purple);
     color: white;
     padding: 8px 12px;
-    margin-bottom: 10px;
 }
 .odziv{
     width: 90%;
     margin: 20px 20px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    padding: 10px 25px;
+    padding: 15px 30px;
     border-radius: 8px;
     height: 320px;
     max-height: 500px;
@@ -259,16 +259,16 @@ form button{
     border: none;
 }
 .delavnice__btns{
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 10px 10px;
-    margin: 10px 0;
+    margin: 10px auto;
 }
 .btn{
-    margin: 0.4vw;
+    margin: 0.2vw;
     font-size: 0.9em;
     background-color: transparent;
     border: 3px var(--purple) solid;
@@ -278,7 +278,7 @@ form button{
     background-color: var(--purple);
 }
 .delavnica__content{
-    padding: 30px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -334,7 +334,7 @@ form button{
     margin-top: 10px;
 }
 #izdelki p{
-    width: 70%;
+
     text-align: center;
 }
 #izdelki img{
@@ -349,7 +349,9 @@ form button{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 10px 4px;
+    padding: 10px 10px;
+    margin-top: 10px;
+    width: 100%;
 }
 .column {
     flex: 80%;
@@ -377,13 +379,20 @@ form button{
         background-position: center center;
     }
    .main__container{
-       width: 90%;
+       width: 85%;
+   }
+   .delavnica__content{
+       width: 85%;
+   }
+   .delavnice__btns{
+       width: 85%;
    }
    .image__container{
        flex-direction: row;
    }
+
    .main__container img{
-       width: 300px;
+       width: 250px;
    }
    .vabilo{
        width: 50%;
@@ -449,7 +458,14 @@ form button{
         display: none;
     }
     .main__container{
-        width: 85%;
+        width: 75%;
+    }
+    .delavnica__content{
+        width: 75%;
+    }
+    .delavnice__btns{
+        width: 75%;
+
     }
     .bars{
         display: none;
