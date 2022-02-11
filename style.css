@@ -33,7 +33,7 @@ a{
 /*CSS reset */
 
 :root{
-    --green: rgba(176,181,107,0.7);
+    --green: rgba(176,181,107,0.1);
     --skin: rgba(255,230,153,1);
     --purple: rgba(228,136,171,1);
     --grey: rgba(175,171,171,0.7);
@@ -58,6 +58,7 @@ body{
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transition: width 0.2s ease-in-out;
+    background-color: var(--green);
 }
 .nav__logo{
     margin-top: 20px;
@@ -105,7 +106,7 @@ main{
     line-height: 1.8em;
     height: fit-content;
     min-height: 100vh;
-    background-image: url("media/ozadje.jpg");
+    background-color: var(--green);
     background-size: cover;
     background-position: center right;
 }
@@ -140,6 +141,7 @@ main{
     width: 100%;
     margin: 0 auto;
     padding: 20px;
+    font-size: 1.2em;
 }
 
 main h2{
@@ -311,11 +313,12 @@ form button{
     border: none;
     border-bottom: 2px black solid;
 }
-.prijava button{
+.prijava button {
     color: black;
     padding: 3px 8px;
     width: 20%;
 }
+
 /* main */
 
 /* izdelki */
