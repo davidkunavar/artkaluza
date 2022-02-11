@@ -298,8 +298,10 @@ form button{
     margin-bottom: 20px;
 }
 .delavnica__content button{
-    background-color: var(--skin);
-    border: 2px black solid;
+    background-color: var(--purple);
+    border: none;
+    padding: 6px 10px;
+
 }
 .prijava{
     opacity: 0;
