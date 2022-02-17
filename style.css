@@ -59,6 +59,7 @@ body{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transition: width 0.2s ease-in-out;
     background-color: var(--green);
+    font-size: 1.3em;
 }
 .nav__logo{
     margin-top: 20px;
@@ -109,37 +110,37 @@ main{
     background-color: var(--green);
 }
 .main__nav{
-    height: 10vh;
+    height: 12vh;
     width: 100vw;
     display: flex;
-    justify-content: center;
     align-items: center;
-    font-size: 1.1em;
     background-color: var(--purple);
     position: sticky;
     top: 0;
     z-index: 5;
-
+    font-size: 1.3em;
 }
 .main__nav h1{
     color: white;
     letter-spacing: 6px;
     font-weight: 500;
+    width: 90vw;
+    text-align: center;
+    padding-left: 10%;
 }
 .main__nav button{
     background-color: transparent;
     border: none;
-    position: fixed;
-    top: 30px;
-    right: 30px;
-    font-size: 1.7em;
+    width: 10vw;
+    font-size: 1.8em;
     color: white;
+    margin-right: 2%;
 }
 .main__container{
     width: 100%;
     margin: 0 auto;
-    padding: 20px;
-    font-size: 1.2em;
+    padding: 15px;
+    font-size: 1.3em;
 }
 
 main h2{
@@ -151,15 +152,11 @@ main h2{
     display: none;
 }
 .main__container img{
-    width: 450px;
+    width: 90%;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    margin: 15px auto;
+    margin: 35px auto;
 }
 .image__container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     margin-top: 15px;
     margin-bottom: 15px;
 }
@@ -177,36 +174,62 @@ main h2{
 }
 .vabilo{
     width: 90%;
-    margin: 20px 20px;
+    margin: 30px 30px;
     text-align: center;
-    height: fit-content;
-    padding: 5px 30px;
+    padding: 10px 30px;
     padding-bottom: 20px;
-    border-radius: 8px;
+    height: fit-content;
+    overflow: scroll;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: var(--purple);
+}
+.vabilo__content{
     background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 1rem 2rem hsl(0 0% 0% / 50%);
 
 }
+.vabilo h3{
+    width: 100%;
+    height: 2em;
+    line-height: 2em;
+    vertical-align: center;
+    background-color: var(--purple);
+    font-weight: 500;
+}
 .vabilo p{
-    margin-top: 10px;
-    margin-bottom: 25px;
+    margin-top: 15px;
+    margin-bottom: 30px;
     text-align: left;
 }
 .vabilo a{
     background-color: var(--purple);
     color: white;
-    padding: 8px 12px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.vabilo::-webkit-scrollbar{
+    display: none;
+}
+
 .odziv{
     width: 90%;
-    margin: 20px 20px;
+    margin: 30px 30px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    padding: 15px 30px;
-    border-radius: 8px;
-    height: 320px;
-    max-height: 500px;
+    padding: 10px 30px;
+    height: 350px;
     overflow: scroll;
+    background-color: var(--purple);
+
+}
+.odziv__content{
     background-color: white;
+    padding: 15px;
+    box-shadow: 0 1rem 2rem hsl(0 0% 0% / 50%);
+    margin-bottom: 10px;
 }
 .odziv h3{
     font-weight: 500;
@@ -220,16 +243,15 @@ main h2{
 }
 .form{
     background-color: var(--skin);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    margin: 0 auto;
     padding: 30px;
 }
 .form h3{
     width: 70%;
     font-weight: 400;
     text-align: center;
+    margin: 0 auto;
+    font-size: 1.3em;
 }
 form{
     width: 70%;
@@ -237,6 +259,8 @@ form{
     display: flex;
     flex-direction: column;
     padding: 15px 0;
+    margin: 15px auto;
+
 }
 input{
     border: 2px black solid;
@@ -249,11 +273,14 @@ textarea{
     margin: 15px 0;
     background-color: transparent;
 }
+form label{
+    font-size: 1.3em;
+}
 form button{
     background-color: black;
     color: white;
     width: fit-content;
-    padding: 10px 10px;
+    padding: 6px 10px;
     border: none;
 }
 .delavnice__btns{
@@ -266,8 +293,8 @@ form button{
     margin: 10px auto;
 }
 .btn{
-    margin: 0.2vw;
-    font-size: 0.9em;
+    margin: 4px;
+    font-size: 1.1em;
     background-color: transparent;
     border: 3px var(--purple) solid;
     transition: background-color 0.3s ease-in-out;
@@ -277,7 +304,6 @@ form button{
 }
 .delavnica__content{
     padding: 15px;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -285,6 +311,7 @@ form button{
     width: 90%;
     margin: 0 auto;
     display: none;
+    font-size: 1.2em;
 }
 .delavnica__galerija{
     width: 90%;
@@ -308,6 +335,7 @@ form button{
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    font-size: 0.8em;
 }
 .prijava input{
     border: none;
@@ -330,6 +358,9 @@ form button{
 }
 #izdelki h2{
     margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    font-size: 1.6em;
 }
 #izdelki p{
 
@@ -347,24 +378,25 @@ form button{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 10px 10px;
+    padding: 10px 0;
     margin-top: 10px;
     width: 100%;
 }
 .column {
-    flex: 80%;
-    max-width: 80%;
+    flex: 90%;
+    max-width: 90%;
     padding: 0 4px;
 }
 .column img {
-    margin-top: 8px;
     vertical-align: middle;
-    width: 100%;
+    width: 80%;
+    box-shadow: 0 1rem 2rem hsl(0 0% 0% / 43%);
+    margin: 15px auto;
 }
 
 /* izdelki */
 
-@media screen and (min-width: 900px){
+@media screen and (min-width: 1000px){
     /* nav */
     .nav{
         width: 0;
@@ -377,7 +409,8 @@ form button{
         background-position: center center;
     }
    .main__container{
-       width: 85%;
+       width: 80%;
+       font-size: 1.2em;
    }
    .delavnica__content{
        width: 85%;
@@ -386,7 +419,11 @@ form button{
        width: 85%;
    }
    .image__container{
+       display: flex;
        flex-direction: row;
+       justify-content: center;
+       align-items: flex-start;
+
    }
 
    .main__container img{
@@ -394,30 +431,35 @@ form button{
    }
    .vabilo{
        width: 50%;
-       height: fit-content;
+       height: 450px;
+       margin: 0 30px;
    }
    .odziv{
        width: 50%;
-       height: 420px;
+       height: 450px;
+       margin: 0 30px;
    }
    .form{
-       flex-direction: row;
+       display: flex;
+       justify-content: center;
+       align-items: center;
        align-content: space-around;
    }
    form{
        width: 50%;
        margin-right: 100px;
    }
-   form h3{
+   .form h3{
        width: 40%;
-       margin-left: 100px;
-       text-align: right;
+       font-size: 1.4em;
    }
    .btn{
        font-size: 1em;
    }
    .prijava{
        width: 50%;
+       margin: 0;
+       font-size: 1em;
    }
 
     /* main */
@@ -425,7 +467,7 @@ form button{
     /* izdelki */
     .column {
         flex: 30%;
-        max-width: 30%;
+        max-width: 100%;
         padding: 0 4px;
     }
     /* izdelki */
@@ -441,10 +483,10 @@ form button{
 
     }
     .nav__logo{
-        font-size: 3em;
+        font-size: 2.2em;
     }
     .nav__list{
-        font-size: 1.3em;
+        font-size: 1.2em;
         margin-top: 100px;
     }
     /* nav */
@@ -475,6 +517,12 @@ form button{
         margin-bottom: 20px;
     }
     .btn{
+        font-size: 1.1em;
+    }
+    .form h3{
+        font-size: 1.5em;
+    }
+    form{
         font-size: 1.1em;
     }
     /* main */

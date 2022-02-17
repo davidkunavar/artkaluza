@@ -79,9 +79,9 @@ let stevec = 1;
 window.setInterval(function () {
     let ime = mnenja[stevec].ime;
     let text = mnenja[stevec].text;
-    odziv.innerHTML = `<h2 style="text-align: center">Odzivi</h2>
+    odziv.innerHTML = `  <h2 style="text-align: center; color: white">ODZIV</h2> <div class="odziv__content">
                         <h3>${ime}:</h3>
-                       <p>"${text}"</p>`
+                       <p>"${text}"</p> </div>`
     stevec = stevec + 1;
     if (stevec === 4){
         stevec = 0;
