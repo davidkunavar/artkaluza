@@ -111,7 +111,7 @@ main{
 }
 .main__nav{
     height: 10vh;
-    width: 100vw;
+    max-width: 100vw;
     display: flex;
     align-items: center;
     background-color: var(--purple);
@@ -127,10 +127,11 @@ main{
     font-weight: 500;
     width: 90vw;
     text-align: center;
+    background-color: blue;
     padding-left: 10%;
 }
 .main__nav button{
-    background-color: transparent;
+    background-color:red;
     border: none;
     width: 10vw;
     font-size: 1.8em;
@@ -299,6 +300,7 @@ form button{
     background-color: transparent;
     border: 3px var(--purple) solid;
     transition: background-color 0.3s ease-in-out;
+    width: 100%;
 }
 .btn:hover{
     background-color: var(--purple);
@@ -456,6 +458,7 @@ form button{
    }
    .btn{
        font-size: 1em;
+       width: fit-content;
    }
    .prijava{
        width: 50%;
