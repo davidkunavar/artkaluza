@@ -79,7 +79,7 @@ let stevec = 1;
 window.setInterval(function () {
     let ime = mnenja[stevec].ime;
     let text = mnenja[stevec].text;
-    odziv.innerHTML = `  <h2 style="text-align: center; color: white">ODZIV</h2> <div class="odziv__content">
+    odziv.innerHTML = `  <h2 style="text-align: center; color: white">ODZIVI</h2> <div class="odziv__content">
                         <h3>${ime}:</h3>
                        <p>"${text}"</p> </div>`
     stevec = stevec + 1;
