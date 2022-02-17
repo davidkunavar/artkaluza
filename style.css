@@ -174,7 +174,7 @@ main h2{
 }
 .vabilo{
     width: 90%;
-    margin: 30px 30px;
+    margin: 30px 15px;
     text-align: center;
     padding: 10px 30px;
     padding-bottom: 20px;
@@ -290,7 +290,7 @@ form button{
     justify-content: center;
     align-items: center;
     padding: 10px 10px;
-    margin: 10px auto;
+    margin:0 auto;
 }
 .btn{
     margin: 4px;
@@ -390,9 +390,9 @@ form button{
 .column img {
     vertical-align: middle;
     width: 80%;
-    box-shadow: 0 1rem 2rem hsl(0 0% 0% / 43%);
     margin: 15px auto;
 }
+
 
 /* izdelki */
 
@@ -431,13 +431,13 @@ form button{
    }
    .vabilo{
        width: 50%;
-       height: 450px;
-       margin: 0 30px;
+       height: 510px;
+       margin: 0 15px;
    }
    .odziv{
        width: 50%;
-       height: 450px;
-       margin: 0 30px;
+       height: 510px;
+       margin: 0 15px;
    }
    .form{
        display: flex;
@@ -466,7 +466,7 @@ form button{
 
     /* izdelki */
     .column {
-        flex: 30%;
+        flex: 25%;
         max-width: 100%;
         padding: 0 4px;
     }
@@ -498,7 +498,7 @@ form button{
         display: none;
     }
     .main__container{
-        width: 75%;
+        width: 90%;
     }
     .delavnica__content{
         width: 75%;
