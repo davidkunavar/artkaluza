@@ -110,7 +110,7 @@ main{
     background-color: var(--green);
 }
 .main__nav{
-    height: 10vh;
+    height: 7vh;
     max-width: 100vw;
     display: flex;
     align-items: center;
@@ -124,7 +124,7 @@ main{
 .main__nav h1{
     color: white;
     letter-spacing: 6px;
-    font-weight: 500;
+    font-weight: 400;
     width: 90vw;
     text-align: center;
     margin-left: 8%;
@@ -140,7 +140,7 @@ main{
     width: 100%;
     margin: 0 auto;
     padding: 15px;
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
 main h2{
@@ -184,6 +184,7 @@ main h2{
     overflow: scroll;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background-color: var(--purple);
+    font-size: 0.9em;
 }
 .vabilo__content{
     background-color: white;
@@ -225,7 +226,7 @@ main h2{
     height: fit-content;
     overflow: scroll;
     background-color: var(--purple);
-
+    font-size: 0.9em;
 }
 .odziv__content{
     background-color: white;
@@ -314,9 +315,10 @@ form button{
     width: 90%;
     margin: 0 auto;
     display: none;
-    font-size: 1em;
+    font-size: 1.1em;
 }
 .delavnica__content h2{
+    font-size: 1.5em;
     font-family: 'Quintessential', cursive;
 }
 .delavnica__galerija{
@@ -324,6 +326,9 @@ form button{
     margin: 0 auto;
     margin-bottom: 20px;
     margin-top: 5px;
+}
+.delavnica__galerija img{
+    transform: scale(1.1);
 }
 .delavnica__content p{
     margin-bottom: 20px;
@@ -356,29 +361,29 @@ form button{
 /* main */
 
 /* izdelki */
-#izdelki{
+.izdelki{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-#izdelki h2{
+.izdelki h2{
     margin-top: 10px;
     text-align: center;
     width: 100%;
     font-size: 1.6em;
 }
-#izdelki p{
+.izdelki p{
 
     text-align: center;
 }
-#izdelki img{
+.izdelki img{
     box-shadow: none;
     transition: 0.2s ease-in;
     width: 400px;
     height: 480px;
 }
-#izdelki img:hover{
+.izdelki img:hover{
     transform: scale(1.03);
 }
 
@@ -400,9 +405,34 @@ form button{
     width: 80%;
     margin: 15px auto;
 }
-
-
 /* izdelki */
+
+/* bio */
+.bio{
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-start;
+    height: fit-content;
+}
+.bio img{
+    width: 30%;
+    border: 5px var(--purple) solid;
+    margin-bottom: 30px;
+}
+.bio__content{
+    margin-left: 3%;
+    height: 500px;
+}
+.bio h2{
+    padding: 0;
+    margin: 0;
+}
+
+/* bio */
+
 
 @media screen and (min-width: 1000px){
     /* nav */
@@ -434,10 +464,10 @@ form button{
 
    }
 
-   .main__container img{
-       width: 250px;
-       height: 300px;
-   }
+    .main__container img{
+        width: 250px;
+        height: 300px;
+    }
    .vabilo{
        width: 50%;
        height: 510px;
@@ -460,7 +490,6 @@ form button{
    }
    .form h3{
        width: 40%;
-       font-size: 1.4em;
    }
    .btn{
        font-size: 1em;
@@ -469,15 +498,16 @@ form button{
    .prijava{
        width: 50%;
        margin: 0;
-       font-size: 1em;
+       font-size: 0.8em;
    }
 
     /* main */
 
     /* izdelki */
-    #izdelki img{
-        width: 200px;
-        height: 280px;
+    .izdelki img{
+        width: 80%;
+        margin-bottom: 30px;
+
     }
     .column {
         flex: 23%;
@@ -485,6 +515,14 @@ form button{
         padding: 0 4px;
     }
     /* izdelki */
+    /* bio */
+    .bio{
+        flex-direction: row;
+    }
+    .bio img{
+        width: 40%;
+    }
+    /* bio */
 }
 
 @media screen and (min-width: 1200px){
@@ -531,12 +569,6 @@ form button{
         margin-bottom: 20px;
     }
     .btn{
-        font-size: 1.1em;
-    }
-    .form h3{
-        font-size: 1.5em;
-    }
-    form{
         font-size: 1.1em;
     }
     /* main */

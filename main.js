@@ -87,4 +87,4 @@ window.setInterval(function () {
         stevec = 0;
     }
     console.log(odziv)
-}, 10000)
+}, 15000)
