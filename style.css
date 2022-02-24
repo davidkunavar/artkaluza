@@ -147,6 +147,7 @@ main h2{
     color: var(--purple);
     margin: 10px 0;
     font-weight: 400;
+    font-size: 1.6em;
 }
 #h2{
     display: none;
@@ -322,13 +323,24 @@ form button{
     font-family: 'Quintessential', cursive;
 }
 .delavnica__galerija{
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
     margin-bottom: 20px;
     margin-top: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.delavnica_img_wraper{
+    width: 400px;
+    overflow: hidden;
+    object-fit: cover;
+    margin: 15px;
+
 }
 .delavnica__galerija img{
-    transform: scale(1.1);
+     width: fit-content;
+    height: fit-content;
 }
 .delavnica__content p{
     margin-bottom: 20px;
@@ -399,11 +411,12 @@ form button{
     flex: 90%;
     max-width: 90%;
     padding: 0 4px;
+
 }
 .column img {
     vertical-align: middle;
-    width: 80%;
-    margin: 15px auto;
+    width: 75%;
+    margin: 25px auto;
 }
 /* izdelki */
 
@@ -419,7 +432,7 @@ form button{
 }
 .bio img{
     width: 60%;
-    border: 4px var(--purple) solid;
+    border: 3px var(--purple) solid;
     margin-bottom: 30px;
 }
 .bio__content{
