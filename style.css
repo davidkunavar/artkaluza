@@ -102,6 +102,30 @@ body{
 
 
 /* main */
+.heroImage{
+    height: 92vh;
+    background-image: url("media/naslovnaSLika.jpg");
+    background-size: cover;
+    background-position: top center;
+}
+.hero__content{
+    background-color: rgba(250, 250, 250, 0.7);
+    height: 100%;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 4em;
+    font-size: 1.1em;
+}
+.hero__content h2{
+    color: black;
+    font-weight: 400;
+}
+.fa-check{
+    color: var(--purple);
+    margin-right: 10px;
+}
 main{
     width: 100vw;
     line-height: 2em;
@@ -110,8 +134,8 @@ main{
     background-color: var(--green);
 }
 .main__nav{
-    height: 7vh;
-    max-width: 100vw;
+    height: 8vh;
+    width: 100vw;
     display: flex;
     align-items: center;
     background-color: var(--purple);
@@ -119,22 +143,21 @@ main{
     top: 0;
     z-index: 5;
     font-size: 1em;
-
+    text-align: center;
 }
 .main__nav h1{
     color: white;
     letter-spacing: 6px;
     font-weight: 400;
-    width: 90vw;
-    text-align: center;
-    margin-left: 8%;
+    width: 99vw;
 }
 .main__nav button{
     background-color: transparent;
     border: none;
-    width: 10vw;
+    position: absolute;
     font-size: 1.8em;
     color: white;
+    right: 3%;
 }
 .main__container{
     width: 100%;
@@ -162,85 +185,7 @@ main h2{
     margin-top: 15px;
     margin-bottom: 15px;
 }
-.image__container ul{
-    list-style-type: circle;
-    padding: 10px;
-    margin-left: 30px;
-    text-align: left;
-}
-.image__container li{
-    margin: 15px 0;
-}
-.image__content {
-    margin-left: 35px;
-    margin-top: 20px;
-}
-.vabilo{
-    width: 85%;
-    margin: 30px auto;
-    text-align: center;
-    padding: 10px 30px;
-    padding-bottom: 20px;
-    height: fit-content;
-    overflow: scroll;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    background-color: var(--purple);
-    font-size: 0.9em;
-}
-.vabilo__content{
-    background-color: white;
-    padding: 15px;
-    margin-bottom: 10px;
-    box-shadow: 0 1rem 2rem hsl(0 0% 0% / 50%);
 
-}
-.vabilo h3{
-    width: 100%;
-    height: 2em;
-    line-height: 2em;
-    vertical-align: center;
-    background-color: var(--purple);
-    font-weight: 500;
-}
-.vabilo p{
-    margin-top: 15px;
-    margin-bottom: 30px;
-    text-align: left;
-}
-.vabilo a{
-    background-color: var(--purple);
-    color: white;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.vabilo::-webkit-scrollbar{
-    display: none;
-}
-
-.odziv{
-    width: 85%;
-    margin: 30px auto;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    padding: 10px 30px;
-    height: fit-content;
-    overflow: scroll;
-    background-color: var(--purple);
-    font-size: 0.9em;
-}
-.odziv__content{
-    background-color: white;
-    padding: 15px;
-    box-shadow: 0 1rem 2rem hsl(0 0% 0% / 50%);
-    margin-bottom: 10px;
-}
-.odziv h3{
-    font-weight: 500;
-}
-.odziv::-webkit-scrollbar{
-    display: none;
-}
 #kontakt{
     width: 70%;
     margin: 0 auto;
@@ -457,10 +402,12 @@ form button{
     /* main */
     main{
         background-position: center center;
+        font-size: 1.2em;
     }
+
    .main__container{
        width: 80%;
-       font-size: 1.2em;
+
    }
    .delavnica__content{
        width: 85%;
@@ -557,6 +504,16 @@ form button{
     /* main */
     main{
         margin-left: 20vw;
+    }
+    .heroImage{
+        height: 100vh;
+        width: 80vw;
+    }
+
+    .hero__content{
+        max-width: 40%;
+        height: 70%;
+        background-color: transparent;
     }
     .main__nav{
         display: none;
