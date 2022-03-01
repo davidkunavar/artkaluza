@@ -223,7 +223,7 @@ main h2{
     padding: 10px 15px;
     border: 1px lightgrey solid;
     text-align: left;
-    width: 50%;
+
 }
 .subcontainer li{
     margin: 15px 0;
@@ -458,6 +458,7 @@ form button{
    }
    .subcontainer{
        flex-direction: row;
+
    }
    .delavnica__content{
        width: 85%;
@@ -547,6 +548,9 @@ form button{
         height: 90%;
         background-color: transparent;
         font-size: 1.2em;
+    }
+    .subcontainer__content{
+        width: 50%;
     }
     .main__nav{
         display: none;
