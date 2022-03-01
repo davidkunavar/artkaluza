@@ -11,6 +11,8 @@ html, body {
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    width: 100vw;
+    overflow-x: hidden;
 }
 img, picture, video, canvas, svg {
     display: block;
@@ -30,6 +32,9 @@ a{
     color: black;
     text-decoration: none;
 }
+a:hover{
+    color: black;
+}
 /*CSS reset */
 
 :root{
@@ -44,12 +49,7 @@ body{
     font-family: 'Roboto Slab', serif;
 
 }
-a{
-    color: black;
-}
-a:hover{
-    color: black;
-}
+
 /* body */
 
 /* nav */
@@ -117,19 +117,22 @@ a:hover{
 .hero__content{
     background-color: rgba(250, 250, 250, 0.7);
     height: 100%;
-    padding: 20px 25px;
+    padding: 10px 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-bottom: 4em;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 .hero__content li{
-    margin: 10px 0;
+    margin: 20px 0;
 }
 .hero__content h2{
-    color: black;
     font-weight: 400;
+    background-color: black;
+    color: white;
+    width: fit-content;
+    padding: 8px 12px;
 }
 .line{
     width: 30%;
@@ -157,34 +160,40 @@ main{
     height: fit-content;
     min-height: 100vh;
     background-color: var(--green);
-    font-size: 1.3em;
+    font-size: 1.1em;
 }
 .main__nav{
     height: 8vh;
     width: 100vw;
     display: flex;
+    justify-content: center;
     align-items: center;
     background-color: var(--purple);
     position: sticky;
     top: 0;
-    z-index: 5;
-    font-size: 1em;
-    text-align: center;
 }
 .col-lg-4{
     padding: 20px;
+    transition: 0.5s ease-in-out;
+}
+.col-lg-4:hover{
+    transform: scale(1.1);
 }
 .main__nav h1{
     color: white;
     letter-spacing: 6px;
     font-weight: 400;
-    width: 99vw;
+    width: 100%;
+    height: auto;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0;
 }
 .main__nav button{
     background-color: transparent;
     border: none;
     position: absolute;
-    font-size: 1.8em;
+    font-size: 1.3em;
     color: white;
     right: 3%;
 }
@@ -211,9 +220,13 @@ main h2{
 
 }
 .subcontainer__content{
-    padding: 10px 30px;
+    padding: 10px 15px;
     border: 1px lightgrey solid;
     text-align: left;
+    width: 50%;
+}
+.subcontainer li{
+    margin: 15px 0;
 }
 #h2{
     display: none;
@@ -228,32 +241,25 @@ main h2{
     margin-top: 15px;
     margin-bottom: 15px;
 }
-
 #kontakt{
-    width: 70%;
-    margin: 0 auto;
+    background-color: transparent;
+    box-shadow: none;
 }
-.form{
-    background-color: var(--skin);
-    margin: 0 auto;
-    padding: 30px;
+#kontakt .subcontainer__content{
+    border: none;
 }
-.form h3{
-    width: 70%;
-    font-weight: 400;
-    text-align: center;
-    margin: 0 auto;
-    font-size: 1.3em;
+.kontak__row{
+    padding: 15px;
+    border-bottom: 2px lightgrey solid;
+}
+.kontak__vrsta {
+    color: var(--purple);
 }
 form{
-    width: 70%;
-    height: fit-content;
     display: flex;
     flex-direction: column;
-    padding: 15px 0;
-    margin: 15px auto;
-
 }
+
 input{
     border: 2px black solid;
     margin-top: 5px;
@@ -265,9 +271,7 @@ textarea{
     margin: 15px 0;
     background-color: transparent;
 }
-form label{
-    font-size: 1.3em;
-}
+
 form button{
     background-color: black;
     color: white;
@@ -285,12 +289,12 @@ form button{
     margin:0 auto;
 }
 .btn{
-    margin: 4px;
+    margin: 4px auto;
     font-size: 1.1em;
     background-color: transparent;
     border: 3px var(--purple) solid;
     transition: background-color 0.3s ease-in-out;
-    width: 100%;
+    width: 80%;
 }
 .btn:hover{
     background-color: var(--purple);
@@ -473,35 +477,14 @@ form button{
         width: 250px;
         height: 300px;
     }
-   .vabilo{
-       width: 50%;
-       height: 510px;
-       margin: 0 15px;
-   }
-   .odziv{
-       width: 50%;
-       height: 510px;
-       margin: 0 15px;
-   }
-   .form{
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       align-content: space-around;
-   }
-   form{
-       width: 50%;
-       margin-right: 100px;
-   }
-   .form h3{
-       width: 40%;
-   }
+
+
    .btn{
        font-size: 1em;
        width: fit-content;
    }
    .prijava{
-       width: 50%;
+       width: 60%;
        margin: 0;
        font-size: 0.8em;
    }
@@ -531,6 +514,7 @@ form button{
 }
 
 @media screen and (min-width: 1200px){
+
     /* nav */
     nav{
         position: fixed;
@@ -550,7 +534,8 @@ form button{
     /* main */
     main{
         margin-left: 20vw;
-        font-size: 1.4em;
+        max-width: 80vw;
+        font-size: 1.2em;
     }
     .heroImage{
         height: 100vh;
@@ -558,9 +543,10 @@ form button{
     }
 
     .hero__content{
-        max-width: 45%;
+        max-width: 50%;
         height: 90%;
         background-color: transparent;
+        font-size: 1.2em;
     }
     .main__nav{
         display: none;
