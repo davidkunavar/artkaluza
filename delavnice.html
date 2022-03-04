@@ -197,15 +197,18 @@
 
     </div>
     <div class="btn__prijava__block">
-        <button class="btnprijava">Prijava</button>
+        <button class="btnprijava">Več</button>
     </div>
 
     <form class="prijava"
           action="https://formspree.io/f/myyoejlv"
           method="POST"
     >
+        <div class="prijava__container">
         <h1 style="font-weight: 400; margin-bottom: 50px">OBRAZEC:</h1>
         <label>Ime in priimek:</label>
+        <input name="name" type="text" required/>
+        <label>Telefonska številka</label>
         <input name="name" type="text" required/>
         <label>
             Vaš e-mail naslov:
@@ -213,6 +216,8 @@
         <input type="email" name="_replyto">
 
         <button  type="submit">Pošlji</button>
+
+        </div>
         <button class="exit__btn"><i class="fas fa-times"></i></button>
     </form>
 </main>

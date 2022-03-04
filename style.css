@@ -121,7 +121,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     padding-bottom: 4em;
-    font-size: 1em;
+    font-size: 0.9em;
 }
 .hero__content li{
     margin: 20px 0;
@@ -161,8 +161,9 @@ main{
     height: fit-content;
     min-height: 100vh;
     background-color: var(--green);
-    font-size: 1.2em;
+    font-size: 1em;
 }
+
 .main__nav{
     height: 8vh;
     width: 100vw;
@@ -210,7 +211,7 @@ main h2{
     color: var(--purple);
     margin: 10px 0;
     font-weight: 400;
-    font-size: 1.6em;
+    font-size: 1.3em;
     font-family: 'Oswald', sans-serif;
 
 }
@@ -225,6 +226,7 @@ main h2{
 }
 .subcontainer__content{
     padding: 8px;
+    padding-top: 0;
     border: 1px lightgrey solid;
     text-align: left;
 }
@@ -292,6 +294,7 @@ form button{
 .btn{
     margin: 5px auto;
     font-size: 1.1em;
+    line-height: 1.3em;
     background-color: transparent;
     border: 3px var(--purple) solid;
     transition: background-color, color 0.3s ease-in-out;
@@ -369,7 +372,7 @@ form button{
     position: fixed;
     height: 100%;
     width: 100%;
-    background-color: rgba(250, 250, 250, 0.85);
+    background-color: rgba(50, 50, 50, 0.85);
     top: 0;
     right: 0;
     margin: 0 0;
@@ -377,6 +380,13 @@ form button{
     display: none;
     justify-content: center;
     align-items: center;
+}
+.prijava__container{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    text-align: left;
+    padding: 25px 30px;
 }
 .prijava input{
     border: none;
@@ -394,9 +404,12 @@ form button{
     background-color: transparent;
 }
 .fa-times{
-    color: black;
+    color: white;
     font-size: 2em;
-
+    transition: 0.3s ease-in-out;
+}
+.fa-times:hover{
+    transform: rotateX(90deg);
 }
 /* main */
 
@@ -408,10 +421,9 @@ form button{
     flex-direction: column;
 }
 .izdelki h2{
-    margin-top: 10px;
     text-align: center;
     width: 100%;
-    font-size: 1.6em;
+    font-size: 1.5em;
 }
 .izdelki p{
 
@@ -420,8 +432,7 @@ form button{
 .izdelki img{
     box-shadow: none;
     transition: 0.2s ease-in;
-    width: 400px;
-    height: fit-content;
+    width: fit-content;
 }
 .izdelki img:hover{
     transform: scale(1.03);
@@ -443,7 +454,7 @@ form button{
 }
 .column img {
     vertical-align: middle;
-    width: 75%;
+    width: 60%;
     margin: 15px auto;
 }
 /* izdelki */
