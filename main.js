@@ -44,22 +44,18 @@ window.addEventListener("DOMContentLoaded", function () {
 
 delavniceBtn.forEach(function (btn) {
     btn.addEventListener("click", function (e) {
+
         visina = greyLine.offsetTop
         console.log(visina)
         window.scrollTo({
-            top: visina - 30,
+            top: visina - 20,
             left: 0,
             behavior: 'smooth'
         });
         delavnicaVsebina.forEach(function (delavnica) {
-
             if(delavnica.classList.contains(e.currentTarget.dataset.id)){
                 delavnica.style.display = "block";
 
-
-                formPrijava.forEach(function (form) {
-                    form.style.opacity = "0"
-                })
             }
             else {
                 delavnica.style.display = "none";
