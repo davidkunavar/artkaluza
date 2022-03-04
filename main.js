@@ -23,10 +23,12 @@ const bars = document.querySelector(".bars");
 const main = document.querySelector("main");
 const odziv = document.querySelector(".odziv");
 
-const btnPrijava = document.querySelectorAll(".btn__prijava");
-const formPrijava = document.querySelectorAll(".prijava");
+const btnPrijava = document.querySelector(".btnprijava");
+const formPrijava = document.querySelector(".prijava");
+const extBtn = document.querySelectorAll(".exit__btn");
 
 const delavniceBtn = document.querySelectorAll(".btn");
+const greyLine = document.querySelector(".grey__line")
 const delavnicaVsebina = document.querySelectorAll(".delavnica__content")
 
 window.addEventListener("DOMContentLoaded", function () {
@@ -42,8 +44,10 @@ window.addEventListener("DOMContentLoaded", function () {
 
 delavniceBtn.forEach(function (btn) {
     btn.addEventListener("click", function (e) {
+        visina = greyLine.offsetTop
+        console.log(visina)
         window.scrollTo({
-            top: 250,
+            top: visina - 30,
             left: 0,
             behavior: 'smooth'
         });
@@ -71,12 +75,14 @@ bars.addEventListener("click", function () {
     main.style.overflow = "hidden";
 })
 
-btnPrijava.forEach(function (button) {
-    button.addEventListener("click", function () {
-        formPrijava.forEach(function (form) {
-            form.style.opacity = "1"
-            button.style.display = "none"
-        })
+btnPrijava.addEventListener("click", function () {
+    formPrijava.style.display = "flex";
+    formPrijava.style.opacity = "1";
+})
+extBtn.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+        formPrijava.style.display = "none";
+        formPrijava.style.opacity = "0";
     })
 })
 
