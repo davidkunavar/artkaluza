@@ -31,6 +31,22 @@ const delavniceBtn = document.querySelectorAll(".btn");
 const greyLine = document.querySelector(".grey__line")
 const delavnicaVsebina = document.querySelectorAll(".delavnica__content")
 
+const cookies = document.querySelector(".cookise");
+const cookieBtn = document.querySelector(".cookie__btn");
+
+
+cookieBtn.addEventListener("click", function () {
+    cookies.classList.remove("active");
+    localStorage.setItem("cookieBannerDisplayed", "true");
+})
+setTimeout( function () {
+    if(!localStorage.getItem("cookieBannerDisplayed")){
+        cookies.classList.add("active");
+    }
+
+}, 2000 )
+
+
 window.addEventListener("DOMContentLoaded", function () {
     delavnicaVsebina.forEach(function (vsebina) {
         if(vsebina.classList.contains("velikonocna")){

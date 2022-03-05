@@ -485,7 +485,49 @@ form button{
 
 /* bio */
 
+/* footer */
+.footer{
+    background-color: black;
+    height: fit-content;
+    color: rgba(180, 180,180, 1);
+    font-size: 0.8em;
+}
+.footer .container{
+    padding: 5px;
+}
+.footer h3{
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5em;
 
+}
+.cookise{
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.active{
+    display: flex;
+}
+.cookise p{
+    background-color: white;
+    padding: 15px;
+    width: 50%;
+    font-size: 0.8em;
+    text-align: center;
+    border: 2px lightgrey solid;
+}
+.cookise button{
+    background-color: transparent;
+    margin-top: 5px;
+    padding: 3px 8px;
+    line-height: initial;
+    height: fit-content;
+}
+/* footer */
 @media screen and (min-width: 1000px){
     /* nav */
     .nav{
@@ -639,6 +681,11 @@ form button{
         max-width: fit-content;
     }
     /* main */
+    /* footer */
+    .footer h3{
+        padding-left: 15px;
+    }
+    /* footer */
 }
 
 
