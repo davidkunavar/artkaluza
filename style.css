@@ -555,6 +555,8 @@ form button{
    }
    .delavnice__btns{
        width: 85%;
+       margin: 0 auto;
+       padding: 4px;
    }
    .image__container{
        display: flex;
@@ -674,7 +676,7 @@ form button{
     }
     .btn{
         font-size: 1em;
-        margin: 7px;
+        margin: 4px;
     }
     .column{
         flex: 30%;
