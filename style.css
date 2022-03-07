@@ -114,7 +114,7 @@ body{
     background-position: top center;
 }
 .hero__content{
-    background-color: rgba(250, 250, 250, 0.7);
+    background-color: rgba(255, 255, 255, 0.7);
     height: 100%;
     padding: 10px 15px;
     display: flex;
@@ -161,7 +161,7 @@ main{
     line-height: 1.6em;
     height: fit-content;
     min-height: 100vh;
-    background-color: var(--green);
+    background-color: rgba(243,243,243,0.7);
     font-size: 1em;
 }
 
@@ -210,7 +210,7 @@ main{
 
 main h2{
     color: var(--purple);
-    margin: 10px 0;
+    margin: 0 0;
     font-weight: 400;
     font-size: 1.3em;
     font-family: 'Oswald', sans-serif;
@@ -234,6 +234,23 @@ main h2{
 .subcontainer li{
     margin: 15px 0;
 }
+.fa-star{
+    color:  gold;
+}
+.fa-dot-circle{
+    margin: 0 5px;
+    font-size: 0.8em;
+}
+.pogojiUporabe h2{
+    font-weight: 500;
+}
+.pogojiUporabe p{
+    margin-bottom: 20px;
+}
+.bold{
+    font-weight: 500;
+    margin-left: 10px;
+}
 #h2{
     display: none;
 }
@@ -250,6 +267,7 @@ main h2{
 #kontakt{
     background-color: transparent;
     box-shadow: none;
+    height: 70vh;
 }
 #kontakt .subcontainer__content{
     border: none;
@@ -290,7 +308,7 @@ form button{
     display: flex;
     flex-wrap: wrap;
     padding: 10px 10px;
-    margin:0 auto;
+    margin: 10px auto;
 }
 .btn{
     margin: 5px auto;
@@ -492,13 +510,22 @@ form button{
     color: rgba(180, 180,180, 1);
     font-size: 0.8em;
 }
+.footer img{
+    height: 15vh;
+}
+.footer .col-4:first-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .footer .container{
-    padding: 5px;
+
 }
 .footer h3{
     font-family: 'Great Vibes', cursive;
-    font-size: 2.5em;
-
+    font-size: 1.5em;
+    margin: 0;
 }
 .cookise{
     width: 100vw;
@@ -556,7 +583,7 @@ form button{
    .delavnice__btns{
        width: 85%;
        margin: 0 auto;
-       padding: 4px;
+       padding-top: 10px;
    }
    .image__container{
        display: flex;
@@ -574,6 +601,12 @@ form button{
     .subcontainer__content{
         width: 50%;
         padding: 10px 15px;
+    }
+    .zasebnost{
+        width: 100%;
+    }
+    .pogojiUporabe{
+        width: 100%;
     }
    .btn{
        font-size: 1em;
@@ -642,8 +675,8 @@ form button{
     .hero__content{
         max-width: 50%;
         height: 90%;
-        background-color: transparent;
         font-size: 1.2em;
+        background-color: transparent;
     }
     .hero__content li {
         margin: 30px 0;
