@@ -214,6 +214,7 @@ main h2{
     font-weight: 400;
     font-size: 1.3em;
     font-family: 'Oswald', sans-serif;
+    height: 15%;
 
 }
 .subcontainer{
@@ -570,7 +571,7 @@ form button{
     }
 
    .main__container{
-       width: 80%;
+       width: 85%;
 
    }
    .subcontainer{
