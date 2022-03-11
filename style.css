@@ -268,7 +268,7 @@ main h2{
 #kontakt{
     background-color: transparent;
     box-shadow: none;
-    height: 70vh;
+    height: 100vh;
 }
 #kontakt .subcontainer__content{
     border: none;
