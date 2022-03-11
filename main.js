@@ -13,9 +13,6 @@ const delavniceBtn = document.querySelectorAll(".btn");
 const greyLine = document.querySelector(".grey__line")
 const delavnicaVsebina = document.querySelectorAll(".delavnica__content")
 
-const cookies = document.querySelector(".cookise");
-const cookieBtn = document.querySelector(".cookie__btn");
-
 
 
 window.addEventListener("DOMContentLoaded", function () {
@@ -59,26 +56,4 @@ bars.addEventListener("click", function () {
     main.style.overflow = "hidden";
 })
 
-btnPrijava.addEventListener("click", function () {
-    formPrijava.style.display = "flex";
-    formPrijava.style.opacity = "1";
-})
-extBtn.forEach(function (btn) {
-    btn.addEventListener("click", function () {
-        formPrijava.style.display = "none";
-        formPrijava.style.opacity = "0";
-    })
-})
-
-
-setTimeout( function () {
-    if(!localStorage.getItem("cookieBannerDisplayed")){
-        cookies.classList.add("active");
-    }
-
-}, 2000 )
-cookieBtn.addEventListener("click", function () {
-    cookies.classList.remove("active");
-    localStorage.setItem("cookieBannerDisplayed", "true");
-})
 

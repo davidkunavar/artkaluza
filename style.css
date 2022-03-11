@@ -514,10 +514,10 @@ form button{
 .footer img{
     height: 15vh;
 }
-.footer .col-4:first-child{
+.footer .col-4{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:flex-start;
     align-items: center;
 }
 .footer .container{
