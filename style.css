@@ -521,7 +521,7 @@ form button{
     align-items: center;
 }
 .footer .container{
-
+    padding: 0;
 }
 .footer h3{
     font-family: 'Great Vibes', cursive;
