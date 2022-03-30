@@ -322,11 +322,13 @@ form button{
     color: black;
     padding: 4px;
     height: available;
-
 }
 .btn:hover{
     background-color: var(--purple);
     color: white;
+}
+.btn:focus{
+    box-shadow: none;
 }
 .delavnica__content{
     padding: 15px;
@@ -480,7 +482,7 @@ form button{
 .footer h3{
     font-family: 'Great Vibes', cursive;
     font-size: 1.5em;
-    margin: 0;
+    margin-top: 15px;
 }
 .footer .col-4:last-child{
 
@@ -522,6 +524,7 @@ form button{
    }
    .delavnica_img_wraper{
        margin: 10px;
+       width: 350px;
    }
    .image__container{
        display: flex;
@@ -640,10 +643,7 @@ form button{
     .delavnica__content{
         width: 75%;
     }
-    .delavnice__btns{
-        width: 75%;
 
-    }
     .bars{
         display: none;
         background-color: transparent;
@@ -654,11 +654,11 @@ form button{
         margin-bottom: 20px;
     }
     .delavnice__btns{
-        justify-content: center;
-        align-items: center;
+
+        width: 90%;
     }
     .btn{
-        font-size: 1em;
+        font-size: 0.9em;
         margin: 4px;
     }
     .column{
