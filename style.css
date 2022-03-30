@@ -306,12 +306,11 @@ form button{
     width: 90%;
     display: flex;
     flex-wrap: wrap;
-
     padding: 5px 5px;
     margin: 5px auto;
 }
 .btn{
-    margin: 5px auto;
+    margin: 5px;
     font-size: 0.8em;
     background-color: transparent;
     border: 3px var(--purple) solid;
@@ -546,7 +545,7 @@ form button{
         width: 100%;
     }
    .btn{
-       font-size: 0.9em;
+       font-size: 0.6em;
        width: 30%;
    }
    .btn:focus-visible{
