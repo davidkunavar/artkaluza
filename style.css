@@ -357,8 +357,8 @@ form button{
     flex-wrap: wrap;
 }
 .delavnica_img_wraper{
-    height: 350px;
-    width: fit-content;
+    height: fit-content;
+    width: 80%;
     object-fit: contain;
     margin: 10px auto;
 }
@@ -425,7 +425,7 @@ form button{
 }
 .column img {
     vertical-align: middle;
-    width: 70%;
+    width: 80%;
     height: fit-content;
     margin: 15px auto;
 }
