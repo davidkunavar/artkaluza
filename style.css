@@ -141,20 +141,23 @@ body{
     background-color: var(--purple);
     transition: width 0.3s ease-in-out;
 }
+
 .col-lg-4:hover  .line{
     width: 100%;
 }
+
 .fa-check{
     color: var(--purple);
     margin-right: 10px;
 }
+
 .grey__line{
     width: 80%;
     height: 2px;
     background-color: rgba(150, 150, 150, 0.3);
     margin: 20px auto;
-
 }
+
 main{
     width: 100vw;
     line-height: 1.6em;
@@ -412,7 +415,6 @@ form button{
     justify-content: center;
     flex-wrap: wrap;
     padding: 10px 0;
-
     width: 100%;
 }
 .column {
