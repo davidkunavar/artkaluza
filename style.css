@@ -314,7 +314,7 @@ form button{
 }
 .btn{
     margin: 5px;
-    font-size: 0.8em;
+    font-size: 0.7em;
     background-color: transparent;
     border: 3px var(--purple) solid;
     transition: background-color, color 0.3s ease-in-out;
@@ -344,7 +344,6 @@ form button{
 }
 .delavnica__content h2{
     font-size: 1.2em;
-    font-family: 'Quintessential', cursive;
     background-color: var(--purple);
     width: fit-content;
     color: white;
@@ -658,7 +657,7 @@ form button{
         width: 90%;
     }
     .btn{
-        font-size: 0.9em;
+        font-size: 0.8em;
         margin: 4px;
     }
     .column{
